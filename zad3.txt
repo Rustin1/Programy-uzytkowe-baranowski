@@ -1,0 +1,7 @@
+clf
+x=[2015]
+y=[12,25,44,33,11]
+bar(x,y,'orange')
+legend('USA', 'Czechy', 'Chiny', 'Indie', 'Meksyk')
+xgrid()
+title("Kraje")

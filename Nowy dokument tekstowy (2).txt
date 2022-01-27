@@ -1,0 +1,47 @@
+//zadanie 3 //wykres słupkowy
+clf
+x=[2010, 2015, 2020]
+y=[4, 2, 3; 2, 0, 1; 3, 4, 0]
+bar(x,y) //funkcja 'stacked' zrobi wszystko jakby w jednej kolumnie a nie osobnych
+legend('złote', 'srebrne', 'brązowe')
+xgrid()
+title("Wykres")
+
+//wykres kołowy
+clf
+x=[12, 9, 5, 6]
+sp=[0,0,0,0] //jak są same zera to wykres jakby bedzie caly połaczony, same jedynki to wyres jak pizza i nic sie nie styka
+text=["p1","p2","p3","p4"]
+pie(x,sp)
+legend(text,1)
+title("Jakiś tytuł")
+
+clear
+clc
+//zadanie 1a
+cotg(5/12)
+a=(165*%pi)/180 //zamiana stopni na radiany
+b=(11*%pi/12)*180/%pi //zamiana radianów na stopnie
+//zadanie 1b - wyznacznik, transpozycja lub macierz odwrotna
+A=[3, -2, 3; -2, 3, 8; 6, 4, 0]
+X=inv(A) //macierz odwrotna
+det(A) //wyznacznik
+A' //transpozycja
+//zadanie1c - ustalmy zmienne i zapisujemy wzór z ustalonymi zmiennymi
+w=25
+I=23
+E=I*(w^2)/2
+//zadanie 1d, zadanie z sumą i ciągami
+n=-3:50 //ciąg liczb od 3 do 50
+wynik=(n+4)./(n^2+2)
+sum(wynik)
+//zadanie 2 wykres liniowy
+x=[2:0.1:6] //dziedzina funkcji 
+y=log2(x)
+y2=sin(x+1)
+plot(x,y,'r') //r zmienia kolor na czrwony
+plot(x,y2, 'g') //g zmienia na zielony
+xgrid() //xgrid dodaje siatke na wykres
+title('wykresy funkcji')
+legend('wykres 1', 'wykres 2')
+
