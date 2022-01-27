@@ -44,4 +44,5 @@ plot(x,y2, 'g') //g zmienia na zielony
 xgrid() //xgrid dodaje siatke na wykres
 title('wykresy funkcji')
 legend('wykres 1', 'wykres 2')
+testtesttest123próbamikrofonu
 
